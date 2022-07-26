@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Signup with Valid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">runScenario("Successful Signup with Valid entries", "Optional[Validate Signup functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Successful API Login with valid entries&quot;, &quot;Optional[Validate login functionality using Rest Api]&quot;)">runScenario("Successful API Login with valid entries", "Optional[Validate login functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Sign Up with valid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">runScenario("Successful Sign Up with valid data", "Optional[Validate signup functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;API Login fails with invalid entries&quot;, &quot;Optional[Validate login functionality using Rest Api]&quot;)">runScenario("API Login fails with invalid entries", "Optional[Validate login functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Login with Valid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">runScenario("Successful Login with Valid entries", "Optional[Validate login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runner.RunnerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful Signup with Valid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">
+                  </a> <!-- runScenario("Successful Signup with Valid entries", "Optional[Validate Signup functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful Signup with Valid entries", "Optional[Validate Signup functionality]")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@data-test=&apos;preorder.profile.orders-history-link&apos;]//span[2]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Runner.UIStepDefs.signup_must_be_successful(UIStepDefs.java:91)
+	at ✽.Signup must be successful(file:///Users/anirbanroy/eclipse-workspace/VitaMojoAssignment/src/test/resources/features/ui/signup.feature:9)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-test=&apos;preorder.profile.orders-history-link&apos;]//span[2]&quot;}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Anirbans-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:458:2529:c144:274c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;18.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d047bf2b64881787f07f0d4edbe9068e, findElement {using=xpath, value=//a[@data-test=&apos;preorder.profile.orders-history-link&apos;]//span[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/q2/k3729y2s5zz...}, goog:chromeOptions: {debuggerAddress: localhost:62554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62554/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d047bf2b64881787f07f0d4edbe9068e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at Runner.UIStepDefs.signup_must_be_successful(UIStepDefs.java:91)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Runner.RunnerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">
+                  </a> <!-- runScenario("Login with Invalid entries", "Optional[Validate login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful API Login with valid entries&quot;, &quot;Optional[Validate login functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("Successful API Login with valid entries", "Optional[Validate login functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful API Login with valid entries", "Optional[Validate login functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">
+                  </a> <!-- runScenario("Login with Invalid entries", "Optional[Validate login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful Sign Up with valid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("Successful Sign Up with valid data", "Optional[Validate signup functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful Sign Up with valid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">
+                  </a> <!-- runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">
+                  </a> <!-- runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;API Login fails with invalid entries&quot;, &quot;Optional[Validate login functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("API Login fails with invalid entries", "Optional[Validate login functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("API Login fails with invalid entries", "Optional[Validate login functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">
+                  </a> <!-- runScenario("Login with Invalid entries", "Optional[Validate login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">
+                  </a> <!-- runScenario("Login with Invalid entries", "Optional[Validate login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign Up fails for invalid data&quot;, &quot;Optional[Validate signup functionality using Rest Api]&quot;)">
+                  </a> <!-- runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">
+                  </a> <!-- runScenario("Login with Invalid entries", "Optional[Validate login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful Login with Valid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">
+                  </a> <!-- runScenario("Successful Login with Valid entries", "Optional[Validate login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful Login with Valid entries", "Optional[Validate login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">
+                  </a> <!-- runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">
+                  </a> <!-- runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Invalid entries&quot;, &quot;Optional[Validate login functionality]&quot;)">
+                  </a> <!-- runScenario("Login with Invalid entries", "Optional[Validate login functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Signup with Invalid entries&quot;, &quot;Optional[Validate Signup functionality]&quot;)">
+                  </a> <!-- runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/anirbanroy/eclipse-workspace/VitaMojoAssignment/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Runner.RunnerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'Runner.RunnerTest')
+data.setCell(0, 3, 42381);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'Runner.RunnerTest')
+data.setCell(1, 3, 15050);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'Runner.RunnerTest')
+data.setCell(2, 3, 13622);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'Runner.RunnerTest')
+data.setCell(3, 3, 12918);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'Runner.RunnerTest')
+data.setCell(4, 3, 12557);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'Runner.RunnerTest')
+data.setCell(5, 3, 12017);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'Runner.RunnerTest')
+data.setCell(6, 3, 11820);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'Runner.RunnerTest')
+data.setCell(7, 3, 11761);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'Runner.RunnerTest')
+data.setCell(8, 3, 10448);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'Runner.RunnerTest')
+data.setCell(9, 3, 10128);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'Runner.RunnerTest')
+data.setCell(10, 3, 9322);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'Runner.RunnerTest')
+data.setCell(11, 3, 7260);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'Runner.RunnerTest')
+data.setCell(12, 3, 6433);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'Runner.RunnerTest')
+data.setCell(13, 3, 4195);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'Runner.RunnerTest')
+data.setCell(14, 3, 3697);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'Runner.RunnerTest')
+data.setCell(15, 3, 2854);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'Runner.RunnerTest')
+data.setCell(16, 3, 2687);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'Runner.RunnerTest')
+data.setCell(17, 3, 2669);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'Runner.RunnerTest')
+data.setCell(18, 3, 2497);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'Runner.RunnerTest')
+data.setCell(19, 3, 2384);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'Runner.RunnerTest')
+data.setCell(20, 3, 2117);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Runner.RunnerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@47874b25)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful API Login with valid entries", "Optional[Validate login functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful Sign Up with valid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("API Login fails with invalid entries", "Optional[Validate login functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sign Up fails for invalid data", "Optional[Validate signup functionality using Rest Api]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful Login with Valid entries", "Optional[Validate login functionality]")</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                <span class="method-start">226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                <span class="method-start">2343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                <span class="method-start">2609 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                <span class="method-start">2723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                <span class="method-start">2894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with Invalid entries", "Optional[Validate login functionality]")</span>
+                <span class="method-start">2913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Successful Signup with Valid entries", "Optional[Validate Signup functionality]")</span>
+                <span class="method-start">3080 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                <span class="method-start">3923 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                <span class="method-start">4420 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                <span class="method-start">10676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                <span class="method-start">12471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Signup with Invalid entries", "Optional[Validate Signup functionality]")</span>
+                <span class="method-start">13848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">45464 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
